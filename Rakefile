@@ -1,14 +1,10 @@
 namespace :execution do
   require 'pathname'
 
-  desc 'display initial message for running implemented code'
-  task :init do
-    puts 'code number?: '
-  end
-
   desc 'run implemented code'
-  task :run => :init do
+  task :run do
     code_number = STDIN.gets.chomp
+    puts "code number => #{code_number}"
 
     system exec_command(code_number)
   end
