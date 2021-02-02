@@ -1,0 +1,6 @@
+FROM ruby:3.0.0
+
+ENV PATH /project
+WORKDIR $PATH
+
+COPY . $PATH
