@@ -22,4 +22,3 @@ dp[0] = 0
 end
 
 puts dp[n]
-
